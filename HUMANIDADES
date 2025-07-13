@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminario de Humanidades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .header {
+            background-color: #0d47a1;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .speakers {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .speaker-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 25px;
+            width: 280px;
+        }
+        .speaker-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #e3f2fd;
+        }
+        .speaker-card h3 {
+            margin: 15px 0 5px;
+            color: #0d47a1;
+            font-size: 1.4em;
+        }
+        .speaker-card .topic {
+            color: #d32f2f;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #0d47a1;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .info-details {
+            text-align: center;
+        }
+        .info-details h2 {
+            margin: 0 0 10px;
+            font-size: 1.8em;
+        }
+        .info-details p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        .price {
+            background-color: white;
+            color: #0d47a1;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .topics-section {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .topics-section h2 {
+            text-align: center;
+            color: #0d47a1;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        .topic-column h3 {
+            color: #0d47a1;
+            border-bottom: 2px solid #bbdefb;
+            padding-bottom: 10px;
+            font-size: 1.3em;
+        }
+        .topic-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .topic-column ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .registration-form {
+            background: linear-gradient(45deg, #0d47a1, #1976d2);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .registration-form h2 {
+            margin-top: 0;
+            font-size: 2.2em;
+        }
+        .registration-form input {
+            width: calc(100% - 22px);
+            padding: 15px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+        }
+        .registration-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.4em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        .registration-form button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            background-color: #333;
+            color: white;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>SEMINARIO DE HUMANIDADES</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="speakers">
+            <div class="speaker-card">
+                <img src="https://i.ibb.co/c2gS1k3/Angel-Salas.png" alt="Foto de Angel Salas">
+                <h3>Angel Salas</h3>
+                <p class="topic">(DESARROLLO PERSONAL)</p>
+            </div>
+            <div class="speaker-card">
+                <img src="https://i.ibb.co/PNw41Rz/Miguel-Salinas.png" alt="Foto de Miguel Salinas">
+                <h3>Miguel Salinas</h3>
+                <p class="topic">(CIUDADANÍA Y CÍVICA)</p>
+            </div>
+            <div class="speaker-card">
+                <img src="https://i.ibb.co/tYHkRbn/Wilfredo-Rios.png" alt="Foto de Wilfredo Rios">
+                <h3>Wilfredo Rios</h3>
+                <p class="topic">(ECONOMÍA)</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div class="info-details">
+                <h2>SÁBADO 19 de Julio</h2>
+                <p><strong>Horario:</strong> 6:00pm - 12:00pm</p>
+                <p><strong>Modalidad:</strong> Virtual</p>
+            </div>
+            <div class="price">
+                PRECIO SOLIDARIO<br>S/10
+            </div>
+        </div>
+
+        <div class="topics-section">
+            <h2>Temario del Seminario</h2>
+            <div class="topics-grid">
+                <div class="topic-column">
+                    <h3>DESARROLLO PERSONAL</h3>
+                    <ul>
+                        <li>• Vínculos Afectivos</li>
+                        <li>• Sexualidad Responsable</li>
+                    </ul>
+                </div>
+                <div class="topic-column">
+                    <h3>CIUDADANÍA Y CÍVICA</h3>
+                    <ul>
+                        <li>• Organismos Internacionales</li>
+                        <li>• Poderes del Estado</li>
+                    </ul>
+                </div>
+                <div class="topic-column">
+                    <h3>ECONOMÍA</h3>
+                    <ul>
+                        <li>• Sistema Monetario</li>
+                        <li>• Sistema Financiero</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="registration-form" id="inscripcion">
+            <h2>Inscríbete Ahora</h2>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                <input type="tel" id="phone" name="phone" placeholder="Número de Celular" required>
+                <button type="button" onclick="sendWhatsApp()">Inscribirme por WhatsApp</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>Informes e Inscripciones: +51 983 050 978</p>
+    </footer>
+
+    <script>
+        function sendWhatsApp() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+
+            if (name === '' || email === '' || phone === '') {
+                alert('Por favor, completa todos los campos del formulario.');
+                return;
+            }
+
+            const seminarNumber = "51983050978";
+            let message = `¡Hola! Deseo inscribirme en el Seminario de Humanidades.\n\n`;
+            message += `*Nombre:* ${name}\n`;
+            message += `*Correo:* ${email}\n`;
+            message += `*Celular:* ${phone}\n\n`;
+            message += `Agradeceré la información para realizar el pago. ¡Gracias!`;
+
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${seminarNumber}&text=${encodeURIComponent(message)}`;
+
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+</body>
+</html>  
